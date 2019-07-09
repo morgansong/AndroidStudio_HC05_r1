@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:background="@color/backgroundText"
+		android:scrollbars="vertical">
+
+		<TextView
+			android:id="@+id/in"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/black" />
+	</ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+
+		<Button
+			android:id="@+id/BtnConnect"
+			style="@android:style/Widget.Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onConnectButtonClicked"
+			android:text="连接"></Button>
+
+		<Button
+			android:id="@+id/BtnSave"
+			style="@android:style/Widget.Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onSaveButtonClicked"
+			android:text="保存"></Button>
+
+		<Button
+			android:id="@+id/BtnClear"
+			style="@android:style/Widget.Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onClearButtonClicked"
+			android:text="清空"></Button>
+
+		<Button
+			android:id="@+id/BtnExit"
+			style="@android:style/Widget.Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onQuitButtonClicked"
+			android:text="退出"></Button>
+    </LinearLayout>
+</LinearLayout>
